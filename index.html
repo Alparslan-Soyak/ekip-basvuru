@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>DEÜ Etkinlikleri | Aramıza Katıl</title>
-    <meta name="description" content="Ekibimize katılmak için hemen başvur.">
+    <meta name="description" content="Topluluğumuza katılmak için hemen başvur.">
     <meta property="og:title" content="DEÜ Etkinlikleri | Aramıza Katıl">
     <meta property="og:description" content="Topluluğumuza katılmak için hemen başvur.">
     <meta property="og:type" content="website">
@@ -25,18 +25,20 @@
             padding: 20px 0;
         }
 
+        /* YAN YANA GÖRÜNÜM İÇİN GÜNCELLENEN BÖLÜM */
         .site-header {
             display: flex;
-            flex-direction: column;
+            flex-direction: row; /* Alt alta dizilimi iptal edip yan yana hizalar */
             align-items: center;
-            margin-bottom: 20px;
-            text-align: center;
+            justify-content: center;
+            margin-bottom: 30px;
         }
         
         .logo {
-            max-width: 120px;
+            max-width: 80px; /* Yan yana dengeli durması için küçültüldü */
             height: auto;
-            margin-bottom: 15px;
+            margin-right: 15px; /* İsim ile logo arasına sağdan boşluk eklendi */
+            margin-bottom: 0; /* Eski alt boşluk silindi */
         }
         
         .header-title {
@@ -47,13 +49,12 @@
             color: #ffffff;
         }
         
-        /* DİKKAT: GÜNCELLENEN KUTU KODLARI BURADA */
         .container {
-            background: rgba(255, 255, 255, 0.12); /* Kutu şeffaflığı artırıldı */
+            background: rgba(255, 255, 255, 0.12);
             padding: 40px;
             border-radius: 16px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6); /* Derinlik veren gölge güçlendirildi */
-            border: 1px solid rgba(255, 255, 255, 0.2); /* Sınırları belirleyen ince beyaz çerçeve eklendi */
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(15px);
             text-align: center;
             max-width: 350px;
