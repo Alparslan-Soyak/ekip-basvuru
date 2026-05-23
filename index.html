@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>DEÜ Etkinlikleri | Aramıza Katıl</title>
-    <meta name="description" content="Ekibimize katılmak için hemen başvur.">
+    <meta name="description" content="Topluluğumuza katılmak için hemen başvur.">
+    
     <meta property="og:title" content="DEÜ Etkinlikleri | Aramıza Katıl">
-    <meta property="og:description" content="Ekibimize katılmak için hemen başvur.">
+    <meta property="og:description" content="Topluluğumuza katılmak için hemen başvur.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="logo-1.png"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <style>
         body {
@@ -25,20 +28,18 @@
             padding: 20px 0;
         }
 
-        /* YAN YANA GÖRÜNÜM İÇİN GÜNCELLENEN BÖLÜM */
         .site-header {
             display: flex;
-            flex-direction: row; /* Alt alta dizilimi iptal edip yan yana hizalar */
+            flex-direction: row;
             align-items: center;
             justify-content: center;
             margin-bottom: 30px;
         }
         
         .logo {
-            max-width: 80px; /* Yan yana dengeli durması için küçültüldü */
+            max-width: 80px;
             height: auto;
-            margin-right: 15px; /* İsim ile logo arasına sağdan boşluk eklendi */
-            margin-bottom: 0; /* Eski alt boşluk silindi */
+            margin-right: 15px;
         }
         
         .header-title {
@@ -59,6 +60,7 @@
             text-align: center;
             max-width: 350px;
             width: 90%;
+            margin-bottom: 30px; /* Alttaki footer'a pay verdik */
         }
         
         .container-title { margin-top: 0; font-size: 24px; letter-spacing: 1px; }
@@ -85,6 +87,35 @@
             box-shadow: 0 5px 15px rgba(100, 255, 218, 0.3);
             outline: none;
         }
+
+        /* YENİ FOOTER BÖLÜMÜ (Instagram) */
+        .site-footer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 20px; /* Üstteki kutuyla pay */
+        }
+        
+        .footer-link {
+            color: #8892B0; /* Metin rengi */
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-link:hover, .footer-link:focus {
+            color: #64FFDA; /* Üzerine gelince renk değişimi */
+            outline: none;
+        }
+        
+        .instagram-icon {
+            font-size: 20px; /* İkon boyutu */
+            margin-right: 8px; /* İsimle ikon arası pay */
+        }
     </style>
 </head>
 <body>
@@ -98,9 +129,17 @@
         <h1 class="container-title">DEÜ Etkinlikleri Ekip Başvuru Formları</h1>
         <p class="description">Aramıza katılmak ve birlikte harika işler başarmak için başvurmak istediğin alanı seç.</p>
         
-        <a href="https://forms.gle/KWMCDexEu3XE4Csf7" class="btn" aria-label="Organizasyon ekibine başvuru formu">🎯 Organizasyon ve Saha Ekibi</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKjmlT7acOTGoChrELXcFXSfstXXuWNqcUCFaMzHD_FpzszQ/viewform?usp=publish-editor" class="btn" aria-label="Sosyal medya ekibine başvuru formu">📱 Sosyal Medya Ekibi</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSckqwAX-q309F8FTs8jm7ZkWt4JLu1lx_qX1NtrQVbXe51Uyw/viewform?usp=publish-editor" class="btn" aria-label="Fotoğraf ekibine başvuru formu">📸 Fotoğraf ve Video Ekibi</a>
+        <a href="LINK_BURAYA_1" class="btn" aria-label="Organizasyon ekibine başvuru formu">🎯 Organizasyon ve Saha Ekibi</a>
+        <a href="LINK_BURAYA_2" class="btn" aria-label="Sosyal medya ekibine başvuru formu">📱 Sosyal Medya Ekibi</a>
+        <a href="LINK_BURAYA_3" class="btn" aria-label="Fotoğraf ekibine başvuru formu">📸 Fotoğraf ve Video Ekibi</a>
     </main>
+
+    <footer class="site-footer">
+        <a href="https://www.instagram.com/deu_etkinlikleri?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="footer-link" aria-label="DEÜ Etkinlikleri Instagram Profilini Ziyaret Et" target="_blank">
+            <i class="fab fa-instagram instagram-icon"></i>
+            <span>DEÜ Etkinlikleri</span>
+        </a>
+    </footer>
+
 </body>
 </html>
