@@ -88,17 +88,17 @@
             outline: none;
         }
 
-        /* YAN YANA BUTONLAR İÇİN FOOTER DÜZENİ */
+        /* YAN YANA SOSYAL MEDYA BUTONLARI */
         .site-footer {
             display: flex;
             justify-content: center;
-            gap: 15px; /* İki buton arasına boşluk */
-            flex-wrap: wrap; /* Ekrana sığmazsa alt alta geçmesini sağlar */
+            gap: 15px;
+            flex-wrap: wrap;
             width: 90%;
             max-width: 400px;
+            margin-bottom: 30px; /* En alt metinler için pay */
         }
         
-        /* INSTAGRAM BUTONU */
         .instagram-box {
             display: inline-flex;
             align-items: center;
@@ -120,12 +120,11 @@
             outline: none;
         }
         
-        /* WHATSAPP BUTONU */
         .whatsapp-box {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(45deg, #25D366, #128C7E); /* WhatsApp Yeşili */
+            background: linear-gradient(45deg, #25D366, #128C7E);
             color: white;
             padding: 12px 24px;
             border-radius: 30px;
@@ -145,6 +144,37 @@
         .social-icon {
             font-size: 20px;
             margin-right: 8px;
+        }
+
+        /* YENİ: EN ALT BİLGİ ALANI (İLETİŞİM & TELİF HAKKI) */
+        .bottom-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 8px;
+        }
+
+        .contact-email {
+            color: #8892B0;
+            text-decoration: none;
+            font-size: 13px;
+            transition: color 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+
+        .contact-email:hover, .contact-email:focus {
+            color: #64FFDA; /* Üzerine gelince neon yeşil olur */
+            text-decoration: underline;
+            outline: none;
+        }
+
+        .copyright {
+            color: #8892B0;
+            font-size: 11px;
+            opacity: 0.6;
+            margin: 0;
+            letter-spacing: 0.5px;
         }
     </style>
 </head>
@@ -175,6 +205,11 @@
             <span>WhatsApp Grubu</span>
         </a>
     </footer>
+
+    <div class="bottom-info">
+        <a href="mailto:info@deuetkinlikleri.com" class="contact-email">info@deuetkinlikleri.com</a>
+        <p class="copyright">© 2026 DEÜ Etkinlikleri - Tüm Hakları Saklıdır.</p>
+    </div>
 
 </body>
 </html>
