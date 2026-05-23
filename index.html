@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>DEÜ Etkinlikleri Ekip Başvuru Formları | Aramıza Katıl</title>
-    <meta name="description" content="Ekibimize katılmak için organizasyon, sosyal medya veya fotoğraf alanlarından sana uygun olanı seç ve başvurunu tamamla.">
+    <title>DEÜ Etkinlikleri | Aramıza Katıl</title>
+    <meta name="description" content="Topluluğumuza katılmak için hemen başvur.">
     
-    <meta property="og:title" content="DEÜ Etkinlikleri Ekip Başvuru Formları">
-    <meta property="og:description" content="Ekibimize katılmak için hemen başvur.">
+    <meta property="og:title" content="DEÜ Etkinlikleri | Aramıza Katıl">
+    <meta property="og:description" content="Topluluğumuza katılmak için hemen başvur.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content=""> 
+    <meta property="og:image" content="logo-1.png"> 
 
     <style>
         body {
@@ -23,7 +23,33 @@
             justify-content: center;
             min-height: 100vh;
             margin: 0;
+            padding: 20px 0; /* Sayfaya üstten/alttan pay verdik */
         }
+
+        /* YENİ HEADER BÖLÜMÜ (Logo ve İsim) */
+        .site-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px; /* Alttaki kutuyla pay */
+            text-align: center;
+        }
+        
+        .logo {
+            max-width: 120px; /* Logonuza göre büyütebilirsiniz */
+            height: auto;
+            margin-bottom: 15px; /* İsimle logo arası pay */
+        }
+        
+        .header-title {
+            font-size: 32px; /* Ana başlık boyutu */
+            font-weight: bold;
+            margin: 0;
+            letter-spacing: 2px; /* Harf aralarını biraz açtık */
+            color: #ffffff; /* İsim rengi */
+        }
+        
+        /* MEVCUT KONTEYNER BÖLÜMÜ (Bozmadık, sadece ismini değiştirdik) */
         .container {
             background: rgba(255, 255, 255, 0.05);
             padding: 40px;
@@ -34,8 +60,10 @@
             max-width: 350px;
             width: 90%;
         }
-        h1 { margin-top: 0; font-size: 24px; letter-spacing: 1px; }
-        p { margin-bottom: 30px; font-size: 14px; color: #8892B0; }
+        
+        .container-title { margin-top: 0; font-size: 24px; letter-spacing: 1px; }
+        .description { margin-bottom: 30px; font-size: 14px; color: #8892B0; }
+        
         .btn {
             display: block;
             width: 100%;
@@ -50,6 +78,7 @@
             box-sizing: border-box;
             font-size: 15px;
         }
+        
         .btn:hover, .btn:focus {
             transform: translateY(-3px);
             background-color: #64FFDA;
@@ -59,9 +88,15 @@
     </style>
 </head>
 <body>
+
+    <div class="site-header">
+        <img src="logo-1.png" alt="DEÜ Etkinlikleri Logosu" class="logo">
+        <h1 class="header-title">DEÜ Etkinlikleri</h1>
+    </div>
+
     <main class="container">
-        <h1>DEÜ Etkinlikleri Ekip Başvuru Formları</h1>
-        <p>Aramıza katılmak ve birlikte harika işler başarmak için başvurmak istediğin alanı seç.</p>
+        <h1 class="container-title">DEÜ Etkinlikleri Ekip Başvuru Formları</h1>
+        <p class="description">Aramıza katılmak ve birlikte harika işler başarmak için başvurmak istediğin alanı seç.</p>
         
         <a href="LINK_BURAYA_1" class="btn" aria-label="Organizasyon ekibine başvuru formu">🎯 Organizasyon ve Saha Ekibi</a>
         <a href="LINK_BURAYA_2" class="btn" aria-label="Sosyal medya ekibine başvuru formu">📱 Sosyal Medya Ekibi</a>
